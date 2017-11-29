@@ -10,5 +10,7 @@ contract ExampleCoin is CompatibleToken {
     name = "Example";
     symbol = "EXC";
     decimals = 18;
+    totalSupply = 10000000 * 10 ** decimals;
+    balances[msg.sender] = totalSupply;
   }
 }
